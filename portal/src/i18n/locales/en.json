@@ -1,0 +1,26 @@
+{
+  "nav": {
+    "home": "Home",
+    "knowledge": "Knowledge",
+    "activities": "Activities",
+    "switchLang": "中文"
+  },
+  "home": {
+    "heroTitle": "External Therapy Association",
+    "heroSubtitle": "Inheriting and developing traditional external therapy medicine for human health",
+    "aboutTitle": "About Us",
+    "aboutContent": "The External Therapy Association is dedicated to researching, promoting, and standardizing various traditional and modern external therapy technologies, gathering industry elites, and promoting academic exchange and development."
+  },
+  "knowledge": {
+    "title": "Knowledge Sharing",
+    "readMore": "Read More",
+    "back": "Back to List"
+  },
+  "activities": {
+    "title": "Latest Activities",
+    "viewDetails": "View Details",
+    "close": "Close",
+    "date": "Date: ",
+    "location": "Location: "
+  }
+}

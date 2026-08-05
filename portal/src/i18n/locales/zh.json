@@ -1,0 +1,26 @@
+{
+  "nav": {
+    "home": "首页",
+    "knowledge": "知识分享",
+    "activities": "活动",
+    "switchLang": "English"
+  },
+  "home": {
+    "heroTitle": "外治法协会",
+    "heroSubtitle": "传承与发展传统外治医学，造福人类健康",
+    "aboutTitle": "关于协会",
+    "aboutContent": "外治法协会致力于研究、推广和规范各类传统与现代外治法技术，汇聚行业精英，促进学术交流与发展。"
+  },
+  "knowledge": {
+    "title": "知识分享",
+    "readMore": "阅读全文",
+    "back": "返回列表"
+  },
+  "activities": {
+    "title": "最新活动",
+    "viewDetails": "查看详情",
+    "close": "关闭",
+    "date": "活动日期：",
+    "location": "活动地点："
+  }
+}
