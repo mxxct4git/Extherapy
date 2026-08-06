@@ -96,6 +96,54 @@
       ]
     }
   },
+  "membership": {
+    "hero": {
+      "eyebrow": "Membership Benefits",
+      "title": "Not Just Members, But Partners in Growth",
+      "lead": "Six major benefit modules covering learning, health services, professional development, community engagement, and giving back."
+    },
+    "benefits": [
+      {
+        "icon": "♡",
+        "tag": "01 Public Welfare & Community",
+        "title": "Continuous Community Connection Monthly",
+        "p1": "The association plans to hold at least one public welfare activity, health lecture, or experience per month, in online, offline, and hybrid formats.",
+        "p2": "Content may cover solar term wellness, book clubs, Guqin meditation, Zhanzhuang, Baduanjin, breathing exercises, special therapy experiences, and herbal workshops. Members can participate for free and enjoy priority registration and reserved spots."
+      },
+      {
+        "icon": "Edu",
+        "tag": "02 Training & Course Discounts",
+        "title": "From Hobby Experience to Professional Upgrade",
+        "p1": "Members have priority registration for training, workshops, and cultural exchange activities hosted or partnered by the association.",
+        "p2": "Courses include Family Health Doctor Foundation Class, Remedial Massage Therapist Certification Course, TCM Aromatherapist Course, Magnetic Cupping Therapist Training, AAM Meditation Course, and Zi Wei Dou Shu."
+      },
+      {
+        "icon": "Med",
+        "tag": "03 Treatment & Service Discounts",
+        "title": "Covering Various Health Services",
+        "p1": "Members can enjoy discounts on treatments such as acupuncture, massage, and moxibustion at cooperative TCM clinics, as well as discounts on aromatherapy studios, AAM meditation courses, personalized diet therapy, and wellness tea services."
+      },
+      {
+        "icon": "Res",
+        "tag": "04 Exclusive Member Resources",
+        "title": "Information, Exchange, and Professional Display",
+        "p1": "Members will regularly receive health newsletters, join the association's internal communication platform, and participate in online Q&A sessions with senior TCM practitioners and aromatherapists.",
+        "p2": "Professional members can also get personal and institutional display opportunities on the website or official account."
+      },
+      {
+        "icon": "Vol",
+        "tag": "05 Community Responsibility",
+        "title": "Giving Back to Society with Professional Skills",
+        "p1": "The association will occasionally organize free clinics and public health projects. Members can sign up to serve or volunteer with priority, and have the opportunity to obtain volunteer service certificates and promotional support."
+      },
+      {
+        "icon": "＋",
+        "tag": "06 Additional Benefits",
+        "title": "Expanding Cultural and Career Opportunities",
+        "p1": "Members can priority participate in cross-border activities in the fields of culture, art, education, and wellness; those who actively participate in association affairs can receive honorary certificates. Professional members also have the opportunity to be priority recommended to partner institutions or external activities."
+      }
+    ]
+  },
   "knowledge": {
     "title": "Knowledge Sharing",
     "readMore": "Read More",

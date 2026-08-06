@@ -6,17 +6,17 @@ export function Footer() {
   const { t } = useTranslation();
 
   return (
-    <footer className="w-full bg-dark text-secondary py-16 mt-auto">
+    <footer className="w-full bg-dark text-secondary py-8 mt-auto">
       <div className="container mx-auto px-4 md:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-4">
           {/* Brand & Slogan */}
           <div className="flex flex-col space-y-4">
             <Link to="/" className="flex items-center gap-3">
-              <div className="p-2 rounded-md">
+              <div className="rounded-md">
                 <img src={logoUrl} alt="CMETA Logo" className="h-20 w-auto object-contain brightness-0 invert" />
               </div>
             </Link>
-            <p className="text-sm text-secondary/80 mt-4 leading-relaxed whitespace-pre-line">
+            <p className="text-sm text-secondary/80 leading-relaxed whitespace-pre-line">
               {t("footer.slogan")}
             </p>
           </div>
