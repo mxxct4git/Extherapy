@@ -4,6 +4,7 @@ import { Button } from "./ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { cn } from "@/lib/utils";
+import logoUrl from "@/assets/logo.png";
 
 export function Header() {
   const { t, i18n } = useTranslation();
@@ -16,25 +17,30 @@ export function Header() {
 
   const navLinks = [
     { name: t("nav.home"), path: "/" },
-    { name: t("nav.knowledge"), path: "/knowledge" },
+    { name: t("nav.about"), path: "/about" },
+    { name: t("nav.membership"), path: "/membership" },
     { name: t("nav.activities"), path: "/activities" },
+    { name: t("nav.contact"), path: "/contact" },
   ];
 
   return (
     <header className="sticky top-0 z-40 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container mx-auto flex h-16 items-center justify-between px-4 md:px-8">
+      <div className="container mx-auto flex h-20 items-center justify-between px-4 md:px-8">
         {/* Logo & Title */}
-        <div className="flex items-center gap-2">
-          <div className="flex h-8 w-8 items-center justify-center rounded-md bg-primary text-primary-foreground font-bold">
-            E
+        <Link to="/" className="flex items-center gap-3">
+          <img src={logoUrl} alt="CMETA Logo" className="h-20 w-auto object-contain" />
+          <div className="hidden md:flex flex-col">
+            <span className="text-lg font-bold tracking-tight text-primary leading-tight">
+              {t("footer.brand")}
+            </span>
+            <span className="text-xs text-muted-foreground leading-tight">
+              {t("footer.brandSub")}
+            </span>
           </div>
-          <span className="text-xl font-bold tracking-tight text-primary hidden sm:inline-block">
-            {t("home.heroTitle")}
-          </span>
-        </div>
+        </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex items-center gap-6">
+        <nav className="hidden lg:flex items-center gap-6">
           {navLinks.map((link) => (
             <Link
               key={link.path}
@@ -43,19 +49,24 @@ export function Header() {
                 "text-sm font-medium transition-colors hover:text-primary",
                 location.pathname === link.path
                   ? "text-primary"
-                  : "text-foreground/60"
+                  : "text-foreground/70"
               )}
             >
               {link.name}
             </Link>
           ))}
-          <Button variant="outline" size="sm" onClick={toggleLanguage}>
-            {t("nav.switchLang")}
-          </Button>
+          <div className="flex items-center gap-3 ml-4 border-l pl-6 border-border">
+            <Button variant="ghost" size="sm" onClick={toggleLanguage}>
+              {t("nav.switchLang")}
+            </Button>
+            <Button size="sm">
+              {t("nav.join")}
+            </Button>
+          </div>
         </nav>
 
         {/* Mobile Nav Toggle */}
-        <div className="flex items-center gap-4 md:hidden">
+        <div className="flex items-center gap-2 lg:hidden">
           <Button variant="ghost" size="sm" onClick={toggleLanguage}>
             {t("nav.switchLang")}
           </Button>
@@ -64,30 +75,35 @@ export function Header() {
             size="icon"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
-            {isMobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+            {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </Button>
         </div>
       </div>
 
       {/* Mobile Nav Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden border-b bg-background px-4 py-4 space-y-4 shadow-lg">
-          <nav className="flex flex-col space-y-3">
+        <div className="lg:hidden border-b bg-background px-4 py-4 space-y-4 shadow-lg absolute w-full left-0">
+          <nav className="flex flex-col space-y-4">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
                 to={link.path}
                 onClick={() => setIsMobileMenuOpen(false)}
                 className={cn(
-                  "text-sm font-medium transition-colors hover:text-primary",
+                  "text-base font-medium transition-colors hover:text-primary",
                   location.pathname === link.path
                     ? "text-primary"
-                    : "text-foreground/60"
+                    : "text-foreground/70"
                 )}
               >
                 {link.name}
               </Link>
             ))}
+            <div className="pt-4 border-t border-border/50">
+              <Button size="default" className="w-full">
+                {t("nav.join")}
+              </Button>
+            </div>
           </nav>
         </div>
       )}

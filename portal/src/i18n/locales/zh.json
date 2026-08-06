@@ -1,15 +1,100 @@
 {
   "nav": {
     "home": "首页",
-    "knowledge": "知识分享",
-    "activities": "活动",
+    "about": "协会介绍",
+    "membership": "会员权益",
+    "activities": "活动课程",
+    "contact": "联系我们",
+    "join": "加入协会",
     "switchLang": "English"
   },
   "home": {
-    "heroTitle": "外治法协会",
-    "heroSubtitle": "传承与发展传统外治医学，造福人类健康",
-    "aboutTitle": "关于协会",
-    "aboutContent": "外治法协会致力于研究、推广和规范各类传统与现代外治法技术，汇聚行业精英，促进学术交流与发展。"
+    "hero": {
+      "eyebrow": "CMETA Australia",
+      "title": "疗愈由外而内\n健康自然发生",
+      "lead": "传承与推广针灸、推拿、拔罐、刮痧、艾灸、草药外敷及芳香疗法等中医外治智慧。",
+      "aboutBtn": "了解协会",
+      "memberBtn": "查看会员权益",
+      "visualTitle": "Healing from the Outside In",
+      "visualSub": "自然疗愈 · 专业交流 · 社区连接"
+    },
+    "whoWeAre": {
+      "eyebrow": "Who We Are",
+      "title": "连接传统智慧与现代健康生活",
+      "lead": "协会致力于推动中医外治法在澳大利亚的规范化、现代化与国际化发展，为从业者、健康专业人士及自然疗法爱好者提供交流与成长平台。",
+      "btn": "阅读完整介绍"
+    },
+    "therapies": {
+      "eyebrow": "External Therapies",
+      "title": "多元自然疗愈方式",
+      "items": [
+        {"icon": "针", "title": "针灸", "desc": "通过经络与穴位调理身心状态。"},
+        {"icon": "推", "title": "推拿", "desc": "以手法放松肌肉并促进气血流通。"},
+        {"icon": "罐", "title": "拔罐", "desc": "传统外治方式与现代健康管理结合。"},
+        {"icon": "艾", "title": "艾灸", "desc": "运用温热刺激支持日常调养。"},
+        {"icon": "草", "title": "草药外敷", "desc": "以天然草本开展外用调理。"},
+        {"icon": "香", "title": "芳香疗法", "desc": "结合气味、情绪与整体健康体验。"}
+      ]
+    },
+    "membership": {
+      "eyebrow": "Membership",
+      "title": "六大会员权益",
+      "lead": "从公益活动、专业培训到诊疗优惠与会员资源，建立持续学习、交流与回馈社区的平台。",
+      "items": [
+        {"icon": "♡", "title": "公益与社区活动", "desc": "健康讲座、体验活动、读书会与养生工坊。"},
+        {"icon": "学", "title": "培训与课程优惠", "desc": "优先报名专业课程、研修及文化交流。"},
+        {"icon": "惠", "title": "诊疗与服务优惠", "desc": "合作诊所、芳疗、禅修及食疗服务优惠。"},
+        {"icon": "资", "title": "专属会员资源", "desc": "健康简报、内部社群、专家答疑与展示机会。"},
+        {"icon": "善", "title": "社区责任与公益", "desc": "义诊、志愿者项目与健康推广合作。"},
+        {"icon": "＋", "title": "额外附加权益", "desc": "文化合作、荣誉证书及专业推荐机会。"}
+      ]
+    },
+    "cta": {
+      "title": "加入一个共同学习与疗愈的社区",
+      "desc": "面向中医从业者、健康专业人士及热爱自然疗法的公众。",
+      "btn": "咨询会员申请"
+    }
+  },
+  "footer": {
+    "brand": "中医外治法协会",
+    "brandSub": "CMETA Australia",
+    "slogan": "疗愈由外而内，健康自然发生。\nHealing from the Outside In, Naturally.",
+    "quickNav": "快速导航",
+    "contact": "联系方式",
+    "email": "Email: info@cmeta.org.au",
+    "location": "Melbourne, Australia",
+    "copyright": "© 2026 Chinese Medicine External Therapies Association of Australia Inc."
+  },
+  "about": {
+    "hero": {
+      "eyebrow": "About CMETA",
+      "title": "传承、连接与创新",
+      "lead": "Chinese Medicine External Therapies Association of Australia Inc."
+    },
+    "ourStory": {
+      "eyebrow": "Our Story",
+      "title": "让中医外治法走进现代澳大利亚社区",
+      "p1": "中医外治法协会致力于传承和推广中医外治法的丰富智慧与实践，包括针灸、推拿、拔罐、刮痧、艾灸、草药外敷及芳香疗法等多种自然疗愈方式。",
+      "p2": "我们相信，由外而内的调理能够支持气血平衡，激发人体自身的恢复潜能，并促进更全面的身心健康。"
+    },
+    "mission": {
+      "eyebrow": "Mission & Vision",
+      "title": "我们的方向",
+      "items": [
+        {"icon": "传", "title": "传承", "desc": "保存并传播中医外治法的知识、经验与文化价值。"},
+        {"icon": "规", "title": "规范", "desc": "推动行业交流、专业成长与更清晰的实践标准。"},
+        {"icon": "新", "title": "创新", "desc": "探索传统疗法与现代健康教育、社区服务的结合。"}
+      ]
+    },
+    "whoWeServe": {
+      "eyebrow": "Who We Serve",
+      "title": "欢迎不同背景的人加入",
+      "items": [
+        {"num": "01", "title": "中医从业者", "desc": "参与学术交流、培训与专业展示。"},
+        {"num": "02", "title": "健康领域专业人士", "desc": "建立跨专业连接与合作机会。"},
+        {"num": "03", "title": "自然疗法爱好者", "desc": "参与公开讲座、体验活动与健康课程。"}
+      ]
+    }
   },
   "knowledge": {
     "title": "知识分享",

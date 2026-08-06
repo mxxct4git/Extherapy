@@ -1,15 +1,100 @@
 {
   "nav": {
     "home": "Home",
-    "knowledge": "Knowledge",
+    "about": "About Us",
+    "membership": "Membership",
     "activities": "Activities",
+    "contact": "Contact",
+    "join": "Join Us",
     "switchLang": "中文"
   },
   "home": {
-    "heroTitle": "External Therapy Association",
-    "heroSubtitle": "Inheriting and developing traditional external therapy medicine for human health",
-    "aboutTitle": "About Us",
-    "aboutContent": "The External Therapy Association is dedicated to researching, promoting, and standardizing various traditional and modern external therapy technologies, gathering industry elites, and promoting academic exchange and development."
+    "hero": {
+      "eyebrow": "CMETA Australia",
+      "title": "Healing from the Outside In\nNaturally",
+      "lead": "Inheriting and promoting traditional Chinese medicine external therapies such as acupuncture, massage, cupping, gua sha, moxibustion, herbal application, and aromatherapy.",
+      "aboutBtn": "About the Association",
+      "memberBtn": "View Membership Benefits",
+      "visualTitle": "Healing from the Outside In",
+      "visualSub": "Natural Healing · Professional Exchange · Community Connection"
+    },
+    "whoWeAre": {
+      "eyebrow": "Who We Are",
+      "title": "Connecting Traditional Wisdom with Modern Healthy Living",
+      "lead": "The association is committed to promoting the standardized, modernized, and internationalized development of traditional Chinese medicine external therapies in Australia, providing a platform for communication and growth for practitioners, health professionals, and natural therapy enthusiasts.",
+      "btn": "Read Full Introduction"
+    },
+    "therapies": {
+      "eyebrow": "External Therapies",
+      "title": "Diverse Natural Healing Methods",
+      "items": [
+        {"icon": "Ac", "title": "Acupuncture", "desc": "Regulate physical and mental state through meridians and acupoints."},
+        {"icon": "Ma", "title": "Massage", "desc": "Relax muscles and promote blood circulation with manual techniques."},
+        {"icon": "Cu", "title": "Cupping", "desc": "Combine traditional external treatment with modern health management."},
+        {"icon": "Mo", "title": "Moxibustion", "desc": "Use warm stimulation to support daily health care."},
+        {"icon": "He", "title": "Herbal Application", "desc": "Carry out external conditioning with natural herbs."},
+        {"icon": "Ar", "title": "Aromatherapy", "desc": "Combine scent, emotion, and overall health experience."}
+      ]
+    },
+    "membership": {
+      "eyebrow": "Membership",
+      "title": "Six Major Membership Benefits",
+      "lead": "From public welfare activities and professional training to treatment discounts and member resources, we establish a platform for continuous learning, communication, and giving back to the community.",
+      "items": [
+        {"icon": "♡", "title": "Public Welfare & Community Activities", "desc": "Health lectures, experiential activities, book clubs, and wellness workshops."},
+        {"icon": "Edu", "title": "Training & Course Discounts", "desc": "Priority registration for professional courses, training, and cultural exchanges."},
+        {"icon": "Med", "title": "Treatment & Service Discounts", "desc": "Discounts at cooperative clinics, aromatherapy, meditation, and diet therapy services."},
+        {"icon": "Res", "title": "Exclusive Member Resources", "desc": "Health newsletters, internal communities, expert Q&A, and exhibition opportunities."},
+        {"icon": "Vol", "title": "Community Responsibility", "desc": "Free clinics, volunteer projects, and health promotion cooperation."},
+        {"icon": "＋", "title": "Additional Benefits", "desc": "Cultural cooperation, honorary certificates, and professional recommendation opportunities."}
+      ]
+    },
+    "cta": {
+      "title": "Join a Community of Learning and Healing",
+      "desc": "Open to TCM practitioners, health professionals, and the public who love natural therapies.",
+      "btn": "Inquire About Membership"
+    }
+  },
+  "footer": {
+    "brand": "Chinese Medicine External Therapies Association",
+    "brandSub": "CMETA Australia",
+    "slogan": "Healing from the Outside In, Naturally.",
+    "quickNav": "Quick Links",
+    "contact": "Contact Us",
+    "email": "Email: info@cmeta.org.au",
+    "location": "Melbourne, Australia",
+    "copyright": "© 2026 Chinese Medicine External Therapies Association of Australia Inc."
+  },
+  "about": {
+    "hero": {
+      "eyebrow": "About CMETA",
+      "title": "Inheritance, Connection and Innovation",
+      "lead": "Chinese Medicine External Therapies Association of Australia Inc."
+    },
+    "ourStory": {
+      "eyebrow": "Our Story",
+      "title": "Bringing TCM External Therapies into Modern Australian Communities",
+      "p1": "The Chinese Medicine External Therapies Association is dedicated to inheriting and promoting the rich wisdom and practice of TCM external therapies, including acupuncture, massage, cupping, gua sha, moxibustion, herbal application, and aromatherapy.",
+      "p2": "We believe that conditioning from the outside in can support the balance of Qi and blood, stimulate the body's own recovery potential, and promote more comprehensive physical and mental health."
+    },
+    "mission": {
+      "eyebrow": "Mission & Vision",
+      "title": "Our Direction",
+      "items": [
+        {"icon": "In", "title": "Inheritance", "desc": "Preserve and disseminate the knowledge, experience, and cultural value of TCM external therapies."},
+        {"icon": "St", "title": "Standardization", "desc": "Promote industry exchange, professional growth, and clearer practice standards."},
+        {"icon": "In", "title": "Innovation", "desc": "Explore the integration of traditional therapies with modern health education and community services."}
+      ]
+    },
+    "whoWeServe": {
+      "eyebrow": "Who We Serve",
+      "title": "Welcome People from Different Backgrounds",
+      "items": [
+        {"num": "01", "title": "TCM Practitioners", "desc": "Participate in academic exchanges, training, and professional exhibitions."},
+        {"num": "02", "title": "Health Professionals", "desc": "Establish interdisciplinary connections and cooperation opportunities."},
+        {"num": "03", "title": "Natural Therapy Enthusiasts", "desc": "Participate in public lectures, experience activities, and health courses."}
+      ]
+    }
   },
   "knowledge": {
     "title": "Knowledge Sharing",
