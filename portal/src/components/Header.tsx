@@ -20,7 +20,7 @@ export function Header() {
     { name: t("nav.about"), path: "/about" },
     { name: t("nav.membership"), path: "/membership" },
     { name: t("nav.activities"), path: "/activities" },
-    { name: t("nav.contact"), path: "/contact" },
+    // { name: t("nav.contact"), path: "/contact" },
   ];
 
   return (
