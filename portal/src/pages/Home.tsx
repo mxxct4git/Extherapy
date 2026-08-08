@@ -20,7 +20,7 @@ export function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* 1. Hero Section */}
-      <section className="bg-secondary/30 py-20 md:py-32">
+      <section className="bg-secondary/80 py-20 md:py-32">
         <div className="container mx-auto px-4 md:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="flex flex-col space-y-6">
@@ -81,7 +81,7 @@ export function Home() {
       </section>
 
       {/* 3. External Therapies */}
-      <section className="py-24 bg-secondary/50">
+      <section className="py-24 bg-secondary/80">
         <div className="container mx-auto px-4 md:px-8">
           <div className="mb-16 text-center max-w-2xl mx-auto">
             <span className="text-primary font-semibold tracking-wider uppercase text-sm block mb-3">
@@ -132,18 +132,18 @@ export function Home() {
       </section>
 
       {/* 5. CTA Section */}
-      <section className="py-20 bg-primary">
-        <div className="container mx-auto px-4 md:px-8">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-8 bg-dark p-12 rounded-3xl text-secondary">
-            <div className="max-w-xl">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+      <section className="py-24 bg-secondary/50">
+        <div className="container mx-auto px-4 md:px-8 max-w-4xl">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-8 text-center md:text-left">
+            <div className="max-w-2xl">
+              <h2 className="text-3xl md:text-4xl font-bold text-dark mb-4">
                 {t("home.cta.title")}
               </h2>
-              <p className="text-secondary/80 text-lg">
+              <p className="text-dark/70 text-lg">
                 {t("home.cta.desc")}
               </p>
             </div>
-            <Button asChild size="lg" className="bg-secondary text-dark hover:bg-white shrink-0">
+            <Button asChild size="lg" className="bg-primary text-white hover:bg-primary/90 shrink-0">
               <Link to="/contact">{t("home.cta.btn")}</Link>
             </Button>
           </div>
