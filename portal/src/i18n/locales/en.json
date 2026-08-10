@@ -28,12 +28,12 @@
       "eyebrow": "External Therapies",
       "title": "Diverse Natural Healing Methods",
       "items": [
-        {"icon": "Ac", "title": "Acupuncture", "desc": "Regulate physical and mental state through meridians and acupoints."},
-        {"icon": "Ma", "title": "Massage", "desc": "Relax muscles and promote blood circulation with manual techniques."},
-        {"icon": "Cu", "title": "Cupping", "desc": "Combine traditional external treatment with modern health management."},
-        {"icon": "Mo", "title": "Moxibustion", "desc": "Use warm stimulation to support daily health care."},
-        {"icon": "He", "title": "Herbal Application", "desc": "Carry out external conditioning with natural herbs."},
-        {"icon": "Ar", "title": "Aromatherapy", "desc": "Combine scent, emotion, and overall health experience."}
+        {"icon": "01", "title": "Acupuncture", "desc": "Regulate physical and mental state through meridians and acupoints."},
+        {"icon": "02", "title": "Massage", "desc": "Relax muscles and promote blood circulation with manual techniques."},
+        {"icon": "03", "title": "Cupping", "desc": "Combine traditional external treatment with modern health management."},
+        {"icon": "04", "title": "Moxibustion", "desc": "Use warm stimulation to support daily health care."},
+        {"icon": "05", "title": "Herbal Application", "desc": "Carry out external conditioning with natural herbs."},
+        {"icon": "06", "title": "Aromatherapy", "desc": "Combine scent, emotion, and overall health experience."}
       ]
     },
     "membership": {

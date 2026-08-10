@@ -19,7 +19,7 @@ export function Header() {
     { name: t("nav.home"), path: "/" },
     { name: t("nav.about"), path: "/about" },
     { name: t("nav.membership"), path: "/membership" },
-    { name: t("nav.activities"), path: "/activities" },
+    // { name: t("nav.activities"), path: "/activities" },
     // { name: t("nav.contact"), path: "/contact" },
   ];
 
@@ -59,9 +59,9 @@ export function Header() {
             <Button variant="ghost" size="sm" onClick={toggleLanguage}>
               {t("nav.switchLang")}
             </Button>
-            <Button size="sm">
+            {/* <Button size="sm">
               {t("nav.join")}
-            </Button>
+            </Button> */}
           </div>
         </nav>
 
@@ -100,9 +100,9 @@ export function Header() {
               </Link>
             ))}
             <div className="pt-4 border-t border-border/50">
-              <Button size="default" className="w-full">
+              {/* <Button size="default" className="w-full">
                 {t("nav.join")}
-              </Button>
+              </Button> */}
             </div>
           </nav>
         </div>
