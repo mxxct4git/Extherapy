@@ -10,3 +10,95 @@
     @apply bg-background text-foreground;
   }
 }
+
+@layer components {
+  .membership-orbit {
+    @apply relative mx-auto grid max-w-6xl grid-cols-1 gap-0;
+  }
+
+  .membership-orbit__center {
+    @apply relative z-10 mx-auto mb-10 flex aspect-square w-[min(17rem,78vw)] flex-col items-center justify-center rounded-full bg-primary px-7 text-center text-white shadow-[0_24px_60px_rgba(0,137,123,0.22)];
+  }
+
+  .membership-orbit__center::before,
+  .membership-orbit__center::after {
+    content: "";
+    @apply pointer-events-none absolute rounded-full border border-primary/20;
+  }
+
+  .membership-orbit__center::before { inset: -0.75rem; }
+  .membership-orbit__center::after { inset: -1.5rem; border-style: dashed; }
+
+  .membership-orbit__center-kicker {
+    @apply mb-3 text-[0.65rem] font-semibold uppercase tracking-[0.2em] text-secondary/90;
+  }
+
+  .membership-orbit__center h3 {
+    @apply text-balance text-2xl font-bold leading-tight md:text-3xl;
+  }
+
+  .membership-orbit__center p {
+    @apply mt-3 text-sm leading-relaxed text-secondary/90;
+  }
+
+  .membership-orbit__item {
+    @apply relative flex min-w-0 gap-4 border-l border-primary/20 py-6 pl-7;
+  }
+
+  .membership-orbit__marker {
+    @apply absolute -left-[1.05rem] top-7 z-10 flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-primary/30 bg-background text-primary shadow-sm transition-colors duration-300;
+  }
+
+  .membership-orbit__marker span { @apply text-[0.65rem] font-bold tracking-wide; }
+  .membership-orbit__copy { @apply min-w-0; }
+  .membership-orbit__tag { @apply mb-2 block text-xs font-semibold uppercase tracking-[0.14em] text-primary; }
+  .membership-orbit__copy h3 { @apply break-words text-lg font-bold leading-snug text-dark md:text-xl; }
+  .membership-orbit__copy p { @apply mt-2 max-w-sm break-words text-sm leading-relaxed text-dark/70 md:text-base; }
+  .membership-orbit__item:hover .membership-orbit__marker { @apply bg-primary text-white; }
+  .membership-orbit__lines { @apply hidden; }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .membership-orbit { @apply grid-cols-2 gap-x-12 gap-y-3; }
+    .membership-orbit__center { @apply col-span-2 mb-12; }
+    .membership-orbit__item { @apply px-7; }
+  }
+
+  @media (min-width: 1024px) {
+    .membership-orbit {
+      grid-template-columns: minmax(0, 1fr) 18rem minmax(0, 1fr);
+      grid-template-rows: repeat(3, minmax(9rem, auto));
+      @apply items-center gap-x-14 gap-y-8 py-4;
+    }
+
+    .membership-orbit__center { @apply col-start-2 row-start-2 mb-0 w-72; }
+    .membership-orbit__item { @apply border-0 p-0; }
+    .membership-orbit__marker { @apply static h-11 w-11 flex-none shadow-none; }
+    .membership-orbit__marker span { @apply text-xs; }
+    .membership-orbit__item--1 { @apply col-start-1 row-start-1; }
+    .membership-orbit__item--2 { @apply col-start-3 row-start-1; }
+    .membership-orbit__item--3 { @apply col-start-1 row-start-2; }
+    .membership-orbit__item--4 { @apply col-start-3 row-start-2; }
+    .membership-orbit__item--5 { @apply col-start-1 row-start-3; }
+    .membership-orbit__item--6 { @apply col-start-3 row-start-3; }
+
+    .membership-orbit__item--1,
+    .membership-orbit__item--3,
+    .membership-orbit__item--5 { @apply flex-row-reverse text-right; }
+
+    .membership-orbit__item--1 .membership-orbit__copy p,
+    .membership-orbit__item--3 .membership-orbit__copy p,
+    .membership-orbit__item--5 .membership-orbit__copy p { @apply ml-auto; }
+
+    .membership-orbit__lines { @apply pointer-events-none absolute inset-0 block; }
+    .membership-orbit__lines span {
+      @apply absolute left-1/2 top-1/2 block h-px origin-left border-t border-dashed border-primary/20;
+      width: 25%;
+    }
+    .membership-orbit__lines span:nth-child(1) { transform: rotate(210deg); }
+    .membership-orbit__lines span:nth-child(2) { transform: rotate(330deg); }
+    .membership-orbit__lines span:nth-child(3) { transform: rotate(180deg); }
+    .membership-orbit__lines span:nth-child(4) { transform: rotate(0deg); }
+    .membership-orbit__lines span:nth-child(5) { transform: rotate(150deg); }
+    .membership-orbit__lines span:nth-child(6) { transform: rotate(30deg); }
+  }
+}

@@ -40,6 +40,10 @@
       "eyebrow": "Membership",
       "title": "六大会员权益",
       "lead": "从公益活动、专业培训到诊疗优惠与会员资源，建立持续学习、交流与回馈社区的平台。",
+      "centerKicker": "CMETA MEMBERSHIP",
+      "centerTitle": "会员共同成长",
+      "centerSub": "学习 · 连接 · 回馈",
+      "detailsBtn": "查看完整会员权益",
       "items": [
         {"icon": "公益", "title": "公益与社区活动", "desc": "健康讲座、体验活动、读书会与养生工坊。"},
         {"icon": "学习", "title": "培训与课程优惠", "desc": "优先报名专业课程、研修及文化交流。"},
@@ -104,8 +108,11 @@
     "hero": {
       "eyebrow": "Membership Benefits",
       "title": "不仅是会员，更是共同成长的伙伴",
-      "lead": "六大权益模块，覆盖学习、健康服务、专业发展、社区参与与公益回馈。"
+      "lead": "六大权益模块，覆盖学习、健康服务、专业发展、社区参与与公益回馈。",
+      "visualLabel": "会员权益"
     },
+    "overviewLabel": "会员权益快速导航",
+    "contentsLabel": "权益目录",
     "benefits": [
       {
         "icon": "♡",
@@ -146,7 +153,13 @@
         "title": "拓展文化与职业机会",
         "p1": "会员可优先参与文化、艺术、教育与养生领域的跨界活动；积极参与协会事务者可获得荣誉证书。专业会员亦有机会被优先推荐给合作机构或外部活动。"
       }
-    ]
+    ],
+    "cta": {
+      "eyebrow": "Join CMETA",
+      "title": "准备加入 CMETA？",
+      "desc": "面向中医从业者、健康专业人士，以及关注自然疗法与社区健康的公众。",
+      "btn": "咨询会员申请"
+    }
   },
   "knowledge": {
     "title": "知识分享",

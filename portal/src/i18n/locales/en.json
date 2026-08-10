@@ -40,6 +40,10 @@
       "eyebrow": "Membership",
       "title": "Six Major Membership Benefits",
       "lead": "From public welfare activities and professional training to treatment discounts and member resources, we establish a platform for continuous learning, communication, and giving back to the community.",
+      "centerKicker": "CMETA MEMBERSHIP",
+      "centerTitle": "Growing Together",
+      "centerSub": "Learn · Connect · Give Back",
+      "detailsBtn": "Explore All Membership Benefits",
       "items": [
         {"icon": "Public", "title": "Public Welfare & Community Activities", "desc": "Health lectures, experiential activities, book clubs, and wellness workshops."},
         {"icon": "Education", "title": "Training & Course Discounts", "desc": "Priority registration for professional courses, training, and cultural exchanges."},
@@ -104,8 +108,11 @@
     "hero": {
       "eyebrow": "Membership Benefits",
       "title": "Not Just Members, But Partners in Growth",
-      "lead": "Six major benefit modules covering learning, health services, professional development, community engagement, and giving back."
+      "lead": "Six major benefit modules covering learning, health services, professional development, community engagement, and giving back.",
+      "visualLabel": "Member Benefits"
     },
+    "overviewLabel": "Quick membership benefits navigation",
+    "contentsLabel": "Benefits Directory",
     "benefits": [
       {
         "icon": "♡",
@@ -146,7 +153,13 @@
         "title": "Expanding Cultural and Career Opportunities",
         "p1": "Members can priority participate in cross-border activities in the fields of culture, art, education, and wellness; those who actively participate in association affairs can receive honorary certificates. Professional members also have the opportunity to be priority recommended to partner institutions or external activities."
       }
-    ]
+    ],
+    "cta": {
+      "eyebrow": "Join CMETA",
+      "title": "Ready to Join CMETA?",
+      "desc": "Open to TCM practitioners, health professionals, and anyone interested in natural therapies and community wellbeing.",
+      "btn": "Inquire About Membership"
+    }
   },
   "knowledge": {
     "title": "Knowledge Sharing",

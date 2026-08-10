@@ -106,9 +106,9 @@ export function Home() {
       </section>
 
       {/* 4. Membership */}
-      <section className="py-24 bg-background">
+      <section className="py-24 bg-background overflow-hidden">
         <div className="container mx-auto px-4 md:px-8">
-          <div className="mb-16 max-w-3xl">
+          <div className="mb-14 md:mb-16 max-w-3xl">
             <span className="text-primary font-semibold tracking-wider uppercase text-sm block mb-3">
               {t("home.membership.eyebrow")}
             </span>
@@ -119,14 +119,37 @@ export function Home() {
               {t("home.membership.lead")}
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="membership-orbit">
+            <div className="membership-orbit__lines" aria-hidden="true">
+              <span /><span /><span /><span /><span /><span />
+            </div>
+
+            <div className="membership-orbit__center">
+              <span className="membership-orbit__center-kicker">
+                {t("home.membership.centerKicker")}
+              </span>
+              <h3>{t("home.membership.centerTitle")}</h3>
+              <p>{t("home.membership.centerSub")}</p>
+            </div>
+
             {memberships.map((item, index) => (
-              <div key={index} className="flex flex-col">
-                <div className="text-2xl text-primary mb-4 font-bold">{item.icon}</div>
-                <h3 className="text-xl font-bold text-dark mb-2">{item.title}</h3>
-                <p className="text-dark/70 leading-relaxed">{item.desc}</p>
-              </div>
+              <article key={index} className={`membership-orbit__item membership-orbit__item--${index + 1}`}>
+                <div className="membership-orbit__marker" aria-hidden="true">
+                  <span>{String(index + 1).padStart(2, "0")}</span>
+                </div>
+                <div className="membership-orbit__copy">
+                  <span className="membership-orbit__tag">{item.icon}</span>
+                  <h3>{item.title}</h3>
+                  <p>{item.desc}</p>
+                </div>
+              </article>
             ))}
+          </div>
+
+          <div className="mt-12 md:mt-16 text-center">
+            <Button asChild variant="outline" className="border-primary text-primary hover:bg-primary/5">
+              <Link to="/membership">{t("home.membership.detailsBtn")}</Link>
+            </Button>
           </div>
         </div>
       </section>
