@@ -166,8 +166,13 @@ export function Home() {
                 {t("home.cta.desc")}
               </p>
             </div>
-            <Button asChild size="lg" className="bg-primary text-white hover:bg-primary/90 shrink-0">
-              <Link to="/contact">{t("home.cta.btn")}</Link>
+            <Button
+              type="button"
+              size="lg"
+              className="bg-primary text-white hover:bg-primary/90 shrink-0"
+              onClick={() => window.alert(t("home.cta.comingSoon"))}
+            >
+              {t("home.cta.btn")}
             </Button>
           </div>
         </div>
