@@ -41,12 +41,12 @@
       "title": "Six Major Membership Benefits",
       "lead": "From public welfare activities and professional training to treatment discounts and member resources, we establish a platform for continuous learning, communication, and giving back to the community.",
       "items": [
-        {"icon": "♡", "title": "Public Welfare & Community Activities", "desc": "Health lectures, experiential activities, book clubs, and wellness workshops."},
-        {"icon": "Edu", "title": "Training & Course Discounts", "desc": "Priority registration for professional courses, training, and cultural exchanges."},
-        {"icon": "Med", "title": "Treatment & Service Discounts", "desc": "Discounts at cooperative clinics, aromatherapy, meditation, and diet therapy services."},
-        {"icon": "Res", "title": "Exclusive Member Resources", "desc": "Health newsletters, internal communities, expert Q&A, and exhibition opportunities."},
-        {"icon": "Vol", "title": "Community Responsibility", "desc": "Free clinics, volunteer projects, and health promotion cooperation."},
-        {"icon": "＋", "title": "Additional Benefits", "desc": "Cultural cooperation, honorary certificates, and professional recommendation opportunities."}
+        {"icon": "Public", "title": "Public Welfare & Community Activities", "desc": "Health lectures, experiential activities, book clubs, and wellness workshops."},
+        {"icon": "Education", "title": "Training & Course Discounts", "desc": "Priority registration for professional courses, training, and cultural exchanges."},
+        {"icon": "Treatment", "title": "Treatment & Service Discounts", "desc": "Discounts at cooperative clinics, aromatherapy, meditation, and diet therapy services."},
+        {"icon": "Resource", "title": "Exclusive Member Resources", "desc": "Health newsletters, internal communities, expert Q&A, and exhibition opportunities."},
+        {"icon": "Volunteer", "title": "Community Responsibility", "desc": "Free clinics, volunteer projects, and health promotion cooperation."},
+        {"icon": "Benefits", "title": "Additional Benefits", "desc": "Cultural cooperation, honorary certificates, and professional recommendation opportunities."}
       ]
     },
     "cta": {
