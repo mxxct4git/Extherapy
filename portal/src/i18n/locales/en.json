@@ -67,23 +67,27 @@
   },
   "about": {
     "hero": {
-      "eyebrow": "About CMETA",
-      "title": "Inheritance, Connection and Innovation",
-      "lead": "Chinese Medicine External Therapies Association of Australia Inc."
+      "eyebrow": "ABOUT CMETA",
+      "title": "Connecting Traditional Wisdom with Modern Healthy Living",
+      "lead": "The Chinese Medicine External Therapies Association is dedicated to promoting the inheritance, professional exchange, and community health practice of traditional external therapies."
     },
     "ourStory": {
       "eyebrow": "Our Story",
-      "title": "Bringing TCM External Therapies into Modern Australian Communities",
+      "title": "Rooted in Tradition, Serving the Community",
       "p1": "The Chinese Medicine External Therapies Association is dedicated to inheriting and promoting the rich wisdom and practice of TCM external therapies, including acupuncture, massage, cupping, gua sha, moxibustion, herbal application, and aromatherapy.",
       "p2": "We believe that conditioning from the outside in can support the balance of Qi and blood, stimulate the body's own recovery potential, and promote more comprehensive physical and mental health."
     },
     "mission": {
       "eyebrow": "Mission & Vision",
-      "title": "Our Direction",
-      "items": [
-        {"icon": "In", "title": "Inheritance", "desc": "Preserve and disseminate the knowledge, experience, and cultural value of TCM external therapies."},
-        {"icon": "St", "title": "Standardization", "desc": "Promote industry exchange, professional growth, and clearer practice standards."},
-        {"icon": "In", "title": "Innovation", "desc": "Explore the integration of traditional therapies with modern health education and community services."}
+      "missionTitle": "OUR MISSION",
+      "missionDesc": "Dedicated to inheriting and promoting the rich wisdom and practice of TCM external therapies, and driving industry exchange and professional growth.",
+      "visionTitle": "OUR VISION",
+      "visionDesc": "To be a bridge connecting traditional wisdom with modern healthy living, making natural healing deeply rooted in every community.",
+      "coreValuesTitle": "Core Values",
+      "coreValues": [
+        {"title": "Inheritance", "desc": "Preserve and disseminate the knowledge, experience, and cultural value of TCM external therapies."},
+        {"title": "Standardization", "desc": "Promote industry exchange, professional growth, and clearer practice standards."},
+        {"title": "Innovation", "desc": "Explore the integration of traditional therapies with modern health education and community services."}
       ]
     },
     "whoWeServe": {

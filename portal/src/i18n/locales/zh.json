@@ -67,23 +67,27 @@
   },
   "about": {
     "hero": {
-      "eyebrow": "About CMETA",
-      "title": "传承、连接与创新",
-      "lead": "Chinese Medicine External Therapies Association of Australia Inc."
+      "eyebrow": "ABOUT CMETA",
+      "title": "连接传统智慧与现代健康生活",
+      "lead": "中医外治法协会致力于推动传统外治法的传承、专业交流和社区健康实践。"
     },
     "ourStory": {
       "eyebrow": "Our Story",
-      "title": "让中医外治法走进现代澳大利亚社区",
+      "title": "扎根传统，服务传统社区",
       "p1": "中医外治法协会致力于传承和推广中医外治法的丰富智慧与实践，包括针灸、推拿、拔罐、刮痧、艾灸、草药外敷及芳香疗法等多种自然疗愈方式。",
       "p2": "我们相信，由外而内的调理能够支持气血平衡，激发人体自身的恢复潜能，并促进更全面的身心健康。"
     },
     "mission": {
       "eyebrow": "Mission & Vision",
-      "title": "我们的方向",
-      "items": [
-        {"icon": "传", "title": "传承", "desc": "保存并传播中医外治法的知识、经验与文化价值。"},
-        {"icon": "规", "title": "规范", "desc": "推动行业交流、专业成长与更清晰的实践标准。"},
-        {"icon": "新", "title": "创新", "desc": "探索传统疗法与现代健康教育、社区服务的结合。"}
+      "missionTitle": "OUR MISSION",
+      "missionDesc": "致力于传承和推广中医外治法的丰富智慧与实践，推动行业交流与专业成长。",
+      "visionTitle": "OUR VISION",
+      "visionDesc": "成为连接传统智慧与现代健康生活的桥梁，让自然疗愈深入每个社区。",
+      "coreValuesTitle": "Core Values",
+      "coreValues": [
+        {"title": "传承", "desc": "保存并传播中医外治法的知识、经验与文化价值。"},
+        {"title": "规范", "desc": "推动行业交流、专业成长与更清晰的实践标准。"},
+        {"title": "创新", "desc": "探索传统疗法与现代健康教育、社区服务的结合。"}
       ]
     },
     "whoWeServe": {
