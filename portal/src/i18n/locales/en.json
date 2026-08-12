@@ -10,9 +10,9 @@
   },
   "home": {
     "hero": {
-      "eyebrow": "CMETA Australia",
-      "title": "Healing from the Outside In\nNaturally",
-      "lead": "Inheriting and promoting traditional Chinese medicine external therapies such as acupuncture, massage, cupping, gua sha, moxibustion, herbal application, and aromatherapy.",
+      "eyebrow": "Heritage · Exchange · Community · Wellbeing",
+      "title": "Bringing Chinese Medicine External Therapies\nto Australian Communities",
+      "lead": "Connecting professionals with local communities, sharing trusted and practical Chinese medicine knowledge, and advancing the exchange and growth of traditional wisdom across Australia.",
       "aboutBtn": "About the Association",
       "memberBtn": "View Membership Benefits",
       "visualTitle": "Healing from the Outside In",
@@ -45,12 +45,12 @@
       "centerSub": "Learn · Connect · Give Back",
       "detailsBtn": "Explore All Membership Benefits",
       "items": [
-        {"icon": "Public", "title": "Public Welfare & Community Activities", "desc": "Health lectures, experiential activities, book clubs, and wellness workshops."},
-        {"icon": "Education", "title": "Training & Course Discounts", "desc": "Priority registration for professional courses, training, and cultural exchanges."},
-        {"icon": "Treatment", "title": "Treatment & Service Discounts", "desc": "Discounts at cooperative clinics, aromatherapy, meditation, and diet therapy services."},
-        {"icon": "Resource", "title": "Exclusive Member Resources", "desc": "Health newsletters, internal communities, expert Q&A, and exhibition opportunities."},
-        {"icon": "Volunteer", "title": "Community Responsibility", "desc": "Free clinics, volunteer projects, and health promotion cooperation."},
-        {"icon": "Benefits", "title": "Additional Benefits", "desc": "Cultural cooperation, honorary certificates, and professional recommendation opportunities."}
+        {"title": "Community & Public Activities", "desc": "At least one public activity, health talk, or experience each month. Members may attend free of charge with priority registration and reserved places."},
+        {"title": "Training & Course Benefits", "desc": "Priority access to association training, professional development, and cultural exchange, with benefits for expert talks, academic seminars, and international exchange."},
+        {"title": "Treatment & Service Benefits", "desc": "Member pricing at partner Chinese medicine clinics, aromatherapy and wellness services, AAM meditation courses, personalised dietary therapy, and wellness teas."},
+        {"title": "Exclusive Member Resources", "desc": "Regular health updates, a dedicated member community, and online expert Q&A. Professional members may also be featured on the website and official channels."},
+        {"title": "Community Service & Giving Back", "desc": "Priority access to free clinics and volunteer programs, eligibility for volunteer service recognition, and promotional or resource support for active participants."},
+        {"title": "Additional Member Benefits", "desc": "Priority participation in cultural, arts, education, and wellness collaborations, with opportunities to receive association honours and professional recommendations."}
       ]
     },
     "cta": {
@@ -61,26 +61,32 @@
     }
   },
   "footer": {
-    "brand": "Chinese Medicine External Therapies Association",
+    "brand": "中医外治法协会",
     "brandSub": "CMETA Australia",
     "slogan": "Healing from the Outside In Naturally.",
     "quickNav": "Quick Links",
     "contact": "Contact Us",
     "email": "Email: info@cmeta.org.au",
-    "location": "Melbourne, Australia",
+    "location": "Shop 2, 188 Whitehorse Road, Balwyn",
     "copyright": "© 2026 Chinese Medicine External Therapies Association of Australia Inc."
   },
   "about": {
     "hero": {
-      "eyebrow": "ABOUT CMETA",
+      "eyebrow": "ABOUT US · ASSOCIATION PROFILE",
       "title": "Connecting Traditional Wisdom with Modern Healthy Living",
       "lead": "The Chinese Medicine External Therapies Association is dedicated to promoting the inheritance, professional exchange, and community health practice of traditional external therapies."
     },
     "ourStory": {
       "eyebrow": "Our Story",
-      "title": "Rooted in Tradition, Serving the Community",
-      "p1": "The Chinese Medicine External Therapies Association is dedicated to inheriting and promoting the rich wisdom and practice of TCM external therapies, including acupuncture, massage, cupping, gua sha, moxibustion, herbal application, and aromatherapy.",
-      "p2": "We believe that conditioning from the outside in can support the balance of Qi and blood, stimulate the body's own recovery potential, and promote more comprehensive physical and mental health."
+      "title": "Preserving External Therapy Wisdom, Advancing Professional Exchange",
+      "p1": "The Chinese Medicine External Therapies Association of Australia is dedicated to preserving and promoting the rich wisdom and practice of Chinese medicine external therapies, including acupuncture, massage, cupping, gua sha, moxibustion, herbal applications, and aromatherapy. We believe that care from the outside in can support the balance of Qi and blood, awaken the body's natural healing potential, and promote holistic wellbeing.",
+      "p2": "The Association provides members with academic exchange platforms, training courses, public lectures, and industry resources, while advancing the standardisation, modernisation, and international development of Chinese medicine external therapies in Australia. We welcome practitioners, health professionals, and members of the public who value natural therapies to join us in preserving and renewing this important cultural heritage."
+    },
+    "card": {
+      "name": "Chinese Medicine External Therapies Association of Australia",
+      "nameEn": "Chinese Medicine External Therapies Association of Australia Inc. (CMETA)",
+      "slogan": "疗愈由外而内，健康自然发生",
+      "sloganEn": "Healing from the Outside In, Naturally"
     },
     "mission": {
       "eyebrow": "Mission & Vision",
@@ -164,14 +170,25 @@
   },
   "knowledge": {
     "title": "Knowledge Sharing",
+    "intro": "Clear, approachable guidance on body constitution, daily wellbeing, and Chinese medicine external therapies.",
     "readMore": "Read More",
+    "comingSoon": "Coming soon — please stay tuned",
     "back": "Back to List"
   },
   "activities": {
     "title": "Latest Activities",
+    "intro": "Bringing traditional external therapy wisdom into everyday life through public talks, professional training, and community practice.",
     "viewDetails": "View Details",
     "close": "Close",
     "date": "Date: ",
     "location": "Location: "
+  },
+  "contact": {
+    "eyebrow": "Contact Us",
+    "title": "Join Our Association Activities",
+    "desc": "Whether you are interested in membership, upcoming activities, professional exchange, or community partnerships, we would be pleased to hear from you.",
+    "wechat": "WeChat / View QR code",
+    "qrAlt": "Association WeChat QR code",
+    "qrHint": "Scan with WeChat to connect"
   }
 }

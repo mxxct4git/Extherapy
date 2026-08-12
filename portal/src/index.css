@@ -4,10 +4,29 @@
 
 @layer base {
   :root {
-    --radius: 0.5rem;
+    --radius: 0.25rem;
+  }
+  html {
+    scroll-behavior: smooth;
   }
   body {
     @apply bg-background text-foreground;
+    font-family: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
+  }
+  button, a {
+    @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2;
+  }
+  .section-anchor {
+    scroll-margin-top: 5rem;
+  }
+}
+
+@layer components {
+  .section-kicker {
+    @apply mb-4 text-xs font-bold uppercase tracking-[0.22em] text-gold;
+  }
+  .section-title {
+    @apply font-serif text-4xl font-medium leading-tight text-primary md:text-5xl;
   }
 }
 

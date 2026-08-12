@@ -14,6 +14,8 @@ export default {
           DEFAULT: theme.colors.primary,
           foreground: theme.colors.secondary,
         },
+        deep: theme.colors.primaryDeep,
+        gold: theme.colors.gold,
         secondary: {
           DEFAULT: theme.colors.secondary,
           foreground: theme.colors.dark,
@@ -25,7 +27,7 @@ export default {
         background: theme.colors.background,
         foreground: theme.colors.dark,
         card: {
-          DEFAULT: theme.colors.background,
+          DEFAULT: theme.colors.surface,
           foreground: theme.colors.dark,
         },
         popover: {
@@ -34,18 +36,18 @@ export default {
         },
         muted: {
           DEFAULT: theme.colors.secondary,
-          foreground: theme.colors.primary,
+          foreground: theme.colors.muted,
         },
         accent: {
-          DEFAULT: theme.colors.secondary,
-          foreground: theme.colors.primary,
+          DEFAULT: theme.colors.gold,
+          foreground: theme.colors.primaryDeep,
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
         },
-        border: theme.colors.secondary,
-        input: theme.colors.secondary,
+        border: theme.colors.border,
+        input: theme.colors.border,
         ring: theme.colors.primary,
       },
       borderRadius: {

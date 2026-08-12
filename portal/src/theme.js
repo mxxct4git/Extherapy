@@ -1,8 +1,13 @@
 export const theme = {
   colors: {
-    primary: '#00897B',
-    secondary: '#E0F2F1',
-    dark: '#1B2631',
-    background: '#FFFFFF',
+    primary: '#123F36',
+    primaryDeep: '#092E28',
+    gold: '#C99B50',
+    secondary: '#F5F0E6',
+    background: '#FAF9F6',
+    surface: '#FFFFFF',
+    dark: '#18231F',
+    muted: '#66736D',
+    border: '#DED7CA',
   }
 };
