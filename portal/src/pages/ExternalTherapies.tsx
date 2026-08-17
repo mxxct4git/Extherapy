@@ -72,7 +72,7 @@ export function ExternalTherapies() {
 
         <div className="mt-20 grid overflow-hidden bg-primary text-white lg:grid-cols-[0.72fr_1.28fr] md:mt-28">
           <div className="flex min-h-72 flex-col justify-between bg-deep p-8 md:p-12">
-            <span className="font-serif text-6xl text-gold/55">整体</span>
+            <span className="font-serif text-6xl text-gold/55">{t("knowledge.external.holisticMark")}</span>
             <p className="text-xs font-bold uppercase tracking-[0.2em] text-gold">{t("knowledge.external.holisticEyebrow")}</p>
           </div>
           <div className="p-8 md:p-12 lg:p-14">
