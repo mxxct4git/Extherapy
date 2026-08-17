@@ -20,7 +20,7 @@ export function Footer() {
           </div>
         </div>
         <nav className={`flex flex-wrap gap-y-3 ${isEnglish ? "gap-x-3 text-sm xl:flex-nowrap" : "gap-x-6 text-sm"}`} aria-label="Footer navigation">
-          {links.map(([id, label]) => <a key={id} href={`#${id}`} className="whitespace-nowrap hover:text-gold">{label}</a>)}
+          {links.map(([id, label]) => <a key={id} href={`/#${id}`} className="whitespace-nowrap hover:text-gold">{label}</a>)}
         </nav>
         <p className={`${isEnglish ? "text-[11px] xl:whitespace-nowrap" : "text-xs"}`}>{t("footer.copyright")}</p>
       </div>

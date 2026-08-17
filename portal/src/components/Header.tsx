@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import { Button } from "./ui/button";
 import { cn } from "@/lib/utils";
 import logoUrl from "@/assets/logo.png";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const sectionIds = ["home", "about", "membership", "knowledge", "activities", "contact"];
 
@@ -11,6 +12,8 @@ export function Header() {
   const { t, i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
+  const location = useLocation();
+  const navigate = useNavigate();
 
   const navLinks = [
     { name: t("nav.home"), id: "home" },
@@ -22,6 +25,7 @@ export function Header() {
   ];
 
   useEffect(() => {
+    if (location.pathname !== "/") return;
     const observer = new IntersectionObserver(
       (entries) => {
         const visible = entries
@@ -36,12 +40,17 @@ export function Header() {
       if (section) observer.observe(section);
     });
     return () => observer.disconnect();
-  }, []);
+  }, [location.pathname]);
 
   const goTo = (id: string) => {
     setIsOpen(false);
+    if (location.pathname !== "/") {
+      navigate(`/#${id}`);
+      window.setTimeout(() => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" }), 0);
+      return;
+    }
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-    window.history.replaceState(null, "", `#${id}`);
+    window.history.replaceState(null, "", `/#${id}`);
   };
 
   const toggleLanguage = () => {

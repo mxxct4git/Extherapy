@@ -173,7 +173,28 @@
     "intro": "Clear, approachable guidance on body constitution, daily wellbeing, and Chinese medicine external therapies.",
     "readMore": "Read More",
     "comingSoon": "Coming soon — please stay tuned",
-    "back": "Back to List"
+    "back": "Back to List",
+    "external": {
+      "eyebrow": "Featured Knowledge",
+      "title": "Chinese Medicine External Therapies",
+      "titleEn": "中医外治法",
+      "intro": "Chinese Medicine External Therapies refer to a range of traditional practices that work through the skin, muscles, meridians, acupoints and other external pathways to support the body's natural ability to restore balance and maintain wellbeing. They include heat therapy, manual techniques, herbal applications, sensory stimulation, movement and lifestyle practices.",
+      "explore": "Explore 11 Therapies",
+      "backToKnowledge": "Back to Knowledge Sharing",
+      "heroAlt": "Traditional tools and botanical materials used in Chinese medicine external therapies",
+      "collectionEyebrow": "11 Traditional Practices",
+      "collectionTitle": "Explore the Therapies",
+      "collectionIntro": "Select a therapy to read its full introduction from the source document.",
+      "viewIntroduction": "View Introduction",
+      "dialogDescription": "Full introduction to {{name}}",
+      "previous": "Previous",
+      "next": "Next",
+      "holisticEyebrow": "The Holistic Approach",
+      "holisticTitle": "The Holistic Approach of External Therapies",
+      "holisticP1": "Chinese medicine external therapies are not limited to addressing a single symptom or body area. Traditionally, practitioners consider the individual as a whole, including constitution, lifestyle, environment, emotional wellbeing, diet and daily habits.",
+      "holisticP2": "The goal is to support the body's natural balance and encourage people to become more aware of their own health, so that traditional health principles can become part of everyday life.",
+      "disclaimer": "Note: Traditional Chinese medicine concepts described above represent traditional health practices and should not be interpreted as claims that these therapies can diagnose, prevent or cure specific medical conditions. Individual therapies should be undertaken appropriately and, where necessary, under the guidance of a qualified practitioner."
+    }
   },
   "activities": {
     "title": "Latest Activities",

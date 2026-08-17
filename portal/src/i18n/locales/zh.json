@@ -173,7 +173,28 @@
     "intro": "从认识体质到日常养护，以清晰、易懂的方式分享中医外治法知识。",
     "readMore": "阅读全文",
     "comingSoon": "内容即将上线，敬请期待",
-    "back": "返回列表"
+    "back": "返回列表",
+    "external": {
+      "eyebrow": "Featured Knowledge · 专题知识",
+      "title": "中医外治法",
+      "titleEn": "Chinese Medicine External Therapies",
+      "intro": "中医外治法是中医的重要组成部分，通过体表、经络、腧穴、肌肉等途径施加适当的刺激或调理，以帮助人体恢复平衡、促进健康。其方法丰富，包括温热疗法、手法治疗、药物外治、穴位刺激、芳香疗法以及运动和食疗等。",
+      "explore": "探索 11 种外治法",
+      "backToKnowledge": "返回知识分享",
+      "heroAlt": "中医外治法传统器具与草本材料",
+      "collectionEyebrow": "11 Traditional Practices",
+      "collectionTitle": "认识十一种外治法",
+      "collectionIntro": "选择一种疗法，查看文档中的完整介绍。",
+      "viewIntroduction": "查看介绍",
+      "dialogDescription": "{{name}}的完整介绍",
+      "previous": "上一种",
+      "next": "下一种",
+      "holisticEyebrow": "The Holistic Approach",
+      "holisticTitle": "中医外治法的整体理念",
+      "holisticP1": "中医外治法并不仅仅针对某一个症状或身体部位。传统中医强调“整体观”，在进行外治调理时，也会综合考虑个人体质、生活方式、环境、情绪、饮食以及日常习惯等因素。",
+      "holisticP2": "其核心不仅在于缓解当下的不适，更在于帮助人们认识自身健康状态，将中医的健康理念融入日常生活，从“治已病”逐步走向“治未病”和长期健康管理。",
+      "disclaimer": "说明：以上中医概念介绍代表传统健康实践，不应被理解为这些疗法可以诊断、预防或治愈特定疾病。个体疗法应当适当进行，并在必要时接受合资格从业者的指导。"
+    }
   },
   "activities": {
     "title": "最新活动",
