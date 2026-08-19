@@ -26,9 +26,9 @@ export function Contact() {
         </div>
 
         <div className="flex flex-col justify-center gap-6 border-t border-border pt-9 lg:border-l lg:border-t-0 lg:pl-14 lg:pt-0">
-          <a href="mailto:info@cmeta.org.au" className="group flex items-center gap-4 text-primary">
+          <a href="mailto:admin@cmeta.org.au" className="group flex items-center gap-4 text-primary">
             <span className="grid h-11 w-11 place-items-center rounded-full border border-primary/20 bg-white"><Mail className="h-5 w-5" /></span>
-            <span className="font-serif text-xl group-hover:text-gold md:text-2xl">info@cmeta.org.au</span>
+            <span className="font-serif text-xl group-hover:text-gold md:text-2xl">admin@cmeta.org.au</span>
           </a>
           <div className="flex items-center gap-4 text-primary">
             <span className="grid h-11 w-11 place-items-center rounded-full border border-primary/20 bg-white"><MapPin className="h-5 w-5" /></span>
