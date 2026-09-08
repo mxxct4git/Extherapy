@@ -198,12 +198,38 @@
     }
   },
   "activities": {
-    "title": "Latest Activities",
-    "intro": "Bringing traditional external therapy wisdom into everyday life through public talks, professional training, and community practice.",
-    "viewDetails": "View Details",
-    "close": "Close",
-    "date": "Date: ",
-    "location": "Location: "
+    "title": "Events & Courses",
+    "intro": "From weekly reading circles to in-person health workshops, we bring traditional wellbeing wisdom into everyday life through learning and practice.",
+    "ongoingTitle": "Happening now",
+    "pastTitle": "Past events",
+    "pastIntro": "Moments of learning, sharing and experiencing together",
+    "recurring": "Weekly event",
+    "inProgress": "Ongoing",
+    "completed": "Past event",
+    "viewPoster": "View full poster",
+    "weekly": {
+      "eyebrow": "Reading · Tea · Health conversations",
+      "title": "Reading The Flavours of Food with Dr Wu",
+      "desc": "A relaxed weekly reading circle exploring Chinese dietary wisdom, with tea, conversation, health consultation and community care.",
+      "date": "Every Saturday",
+      "location": "Online via Zoom / in person at Ting Yu Studio",
+      "meta": "Saturdays · Online & in person",
+      "alt": "Weekly reading and health sharing event poster"
+    },
+    "workshop": {
+      "eyebrow": "Free community series",
+      "title": "Chinese Medicine Health Workshop",
+      "desc": "Four practical sessions exploring sleep, health management, food therapy and personal wellness. Join one session or follow the whole series.",
+      "dates": "30 Aug, 27 Sep, 18 Oct & 29 Nov",
+      "meta": "August–November · Point Cook",
+      "alt": "Chinese Medicine Health Workshop series poster"
+    },
+    "past": {
+      "march": { "title": "Autumn Wellness Talk & Gathering", "meta": "22 March · Balwyn", "desc": "Meditation, Baduanjin, seasonal wellbeing insights and a community Chinese medicine consultation.", "alt": "Autumn wellness talk and gathering poster" },
+      "may": { "title": "May Wellness · Herbal Wisdom", "meta": "24 May · Balwyn", "desc": "Discover traditional herbs, experience gua sha and explore balancing herbal teas.", "alt": "May herbal wellness event poster" },
+      "june": { "title": "June Wellness · The Warmth of Moxa", "meta": "28 June · Mount Waverley", "desc": "An introduction to moxa, foundational acupoints and practical moxibustion at home.", "alt": "June moxibustion wellness event poster" },
+      "july": { "title": "Healing Incense & Herbal Sachets", "meta": "26 July · Oakleigh South", "desc": "Explore botanical aromas and handcraft a personal incense bracelet and herbal sachet.", "alt": "Healing incense and herbal sachet event poster" }
+    }
   },
   "contact": {
     "eyebrow": "Contact Us",
