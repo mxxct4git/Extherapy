@@ -68,6 +68,9 @@
     "contact": "Contact Us",
     "email": "Email: admin@cmeta.org.au",
     "location": "Shop 2, 188 Whitehorse Road, Balwyn",
+    "relatedLink": "Related link",
+    "ningYuanTang": "Ning Yuan Tang",
+    "opensInNewWindow": "opens in a new window",
     "copyright": "© 2026 Chinese Medicine External Therapies Association of Australia Inc."
   },
   "about": {
@@ -166,6 +169,115 @@
       "title": "Ready to Join CMETA?",
       "desc": "Open to TCM practitioners, health professionals, and anyone interested in natural therapies and community wellbeing.",
       "btn": "Inquire About Membership"
+    }
+  },
+  "application": {
+    "eyebrow": "Membership Application",
+    "title": "Membership Application Form",
+    "associationName": "Chinese Medicine External Therapies Association of Australia Inc.",
+    "intro": "Complete the details below and add your handwritten signature. Fields marked with an asterisk are required. After submitting, you can print or save the application as a PDF.",
+    "back": "Back to Membership",
+    "sections": {
+      "personal": "Personal Information",
+      "address": "Address Information",
+      "membership": "Membership and Professional Background",
+      "declaration": "Declaration and Signature"
+    },
+    "fields": {
+      "nameChinese": "Name in Chinese",
+      "nameEnglish": "Name in English",
+      "gender": "Gender",
+      "dateOfBirth": "Date of Birth",
+      "ageHint": "Applicants must be at least 18 years old.",
+      "contactNumber": "Contact Number",
+      "email": "Email",
+      "residentialAddress": "Residential Address",
+      "mailingAddress": "Mailing Address",
+      "mailingSame": "My mailing address is the same as my residential address",
+      "professionalBackground": "Professional Background",
+      "backgroundHint": "You may briefly describe relevant experience, qualifications, or a professional background in Chinese medicine external therapies.",
+      "optional": "(optional)",
+      "select": "Please select"
+    },
+    "gender": {
+      "female": "Female",
+      "male": "Male",
+      "non_binary": "Non-binary",
+      "prefer_not_to_say": "Prefer not to say"
+    },
+    "membershipType": {
+      "label": "Membership Type",
+      "viewDetails": "View eligibility and benefits",
+      "requirementsTitle": "Eligibility",
+      "benefitsTitle": "Member Benefits",
+      "validityTitle": "Membership Validity",
+      "validity": "The annual membership fee takes effect on the payment date and membership remains valid for 12 months. The Association will send a renewal reminder by email before expiry.",
+      "ordinary": {
+        "title": "Ordinary Member",
+        "fee": "AUD $50 / year",
+        "desc": "For members of the public who support the Association's mission and are interested in learning about or promoting Chinese medicine external therapies.",
+        "requirements": [
+          "Aged 18 years or above",
+          "Supports the mission of the Association",
+          "Interested in learning about or promoting Chinese medicine external therapies such as moxibustion, cupping, tui na, and gua sha",
+          "No professional qualification or industry experience required"
+        ],
+        "benefits": [
+          "Participate in Association events, lectures, and training",
+          "Voting rights at member meetings",
+          "Priority registration for training and cultural exchange events",
+          "Enjoy discounted member rates"
+        ]
+      },
+      "professional": {
+        "title": "Professional Member",
+        "fee": "AUD $80 / year",
+        "desc": "For applicants with Chinese medicine qualifications, experience, or a professional background and relevant professional or clinical experience.",
+        "requirements": [
+          "Holds qualifications, experience, or a professional background in Chinese medicine",
+          "At least one year of relevant professional or clinical experience",
+          "Committed to contributing to the development and operations of the Association"
+        ],
+        "benefits": [
+          "All rights of an Ordinary Member",
+          "Eligible to serve as a speaker or instructor at Association events or seminars",
+          "Opportunity to be listed in the Association's recommended practitioner directory",
+          "Participate in industry standards, academic exchanges, and professional development programs",
+          "Priority access to research and collaborative project opportunities"
+        ]
+      }
+    },
+    "declaration": {
+      "title": "Applicant Declaration",
+      "text": "I declare that the information provided above is true and correct, and I agree to abide by the constitution and regulations of the Association.",
+      "accept": "I have read and agree to the applicant declaration above."
+    },
+    "signature": {
+      "title": "Applicant Signature",
+      "hint": "Use a mouse, stylus, or finger to sign below. Your signature will be cropped and compressed before upload.",
+      "placeholder": "Sign here",
+      "canvasLabel": "Handwritten signature area",
+      "clear": "Clear and sign again",
+      "savedAlt": "Applicant signature",
+      "date": "Date Signed"
+    },
+    "privacy": "Your personal details and signature will only be used to process, review, and administer your membership application. Check your details before submitting.",
+    "submit": "Submit Application",
+    "submitting": "Submitting",
+    "errors": {
+      "signatureRequired": "Please add your handwritten signature before submitting.",
+      "notConfigured": "The application service has not been configured yet. Please try again later or contact the Association.",
+      "rateLimited": "Too many submissions. Please wait and try again.",
+      "submitFailed": "The application could not be submitted. Check your connection and try again."
+    },
+    "success": {
+      "title": "Application submitted",
+      "desc": "Keep your application reference. You can now print or save this application as a PDF.",
+      "print": "Print / Save PDF",
+      "reference": "Application Reference",
+      "submittedAt": "Submitted At",
+      "notProvided": "Not provided",
+      "footer": "Generated by the CMETA online membership application system. Application reference: {{reference}}"
     }
   },
   "knowledge": {

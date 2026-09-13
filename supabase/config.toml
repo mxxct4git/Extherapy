@@ -1,0 +1,4 @@
+project_id = "extherapy"
+
+[functions.submit-membership]
+verify_jwt = false

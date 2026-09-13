@@ -1,7 +1,10 @@
 import { useTranslation } from "react-i18next";
+import { ArrowRight } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 export function Membership() {
   const { t } = useTranslation();
+  const navigate = useNavigate();
   const benefits = t("home.membership.items", { returnObjects: true }) as Array<{ title: string; desc: string }>;
 
   return (
@@ -21,6 +24,11 @@ export function Membership() {
               <p className="mt-4 leading-7 text-muted-foreground">{item.desc}</p>
             </article>
           ))}
+        </div>
+        <div className="mt-12 text-center">
+          <button type="button" onClick={() => navigate("/membership/apply")} className="inline-flex items-center gap-3 bg-primary px-7 py-4 font-semibold text-white transition-colors hover:bg-deep">
+            {t("nav.join")} <ArrowRight className="h-4 w-4" />
+          </button>
         </div>
       </div>
     </section>

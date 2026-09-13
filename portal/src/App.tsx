@@ -7,6 +7,7 @@ import { Knowledge } from "./pages/Knowledge";
 import { Activities } from "./pages/Activities";
 import { Contact } from "./pages/Contact";
 import { ExternalTherapies } from "./pages/ExternalTherapies";
+import { MembershipApplication } from "./pages/MembershipApplication";
 import { useEffect } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 
@@ -48,6 +49,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/knowledge/external-therapies" element={<ExternalTherapies />} />
+          <Route path="/membership/apply" element={<MembershipApplication />} />
         </Routes>
       </main>
       <Footer />

@@ -68,6 +68,9 @@
     "contact": "联系方式",
     "email": "Email: admin@cmeta.org.au",
     "location": "Shop 2, 188 Whitehorse Road, Balwyn",
+    "relatedLink": "友情链接",
+    "ningYuanTang": "宁元堂",
+    "opensInNewWindow": "在新窗口打开",
     "copyright": "© 2026 Chinese Medicine External Therapies Association of Australia Inc."
   },
   "about": {
@@ -166,6 +169,115 @@
       "title": "准备加入 CMETA？",
       "desc": "面向中医从业者、健康专业人士，以及关注自然疗法与社区健康的公众。",
       "btn": "咨询会员申请"
+    }
+  },
+  "application": {
+    "eyebrow": "Membership Application",
+    "title": "会员申请表",
+    "associationName": "澳大利亚中医外治法协会",
+    "intro": "请填写以下资料并完成手写签名。带星号的项目为必填项，提交后可打印或保存为 PDF。",
+    "back": "返回会员权益",
+    "sections": {
+      "personal": "个人信息",
+      "address": "地址信息",
+      "membership": "会籍与专业背景",
+      "declaration": "声明与签名"
+    },
+    "fields": {
+      "nameChinese": "中文姓名",
+      "nameEnglish": "英文姓名",
+      "gender": "性别",
+      "dateOfBirth": "出生日期",
+      "ageHint": "申请人须年满 18 周岁。",
+      "contactNumber": "联系电话",
+      "email": "电子邮箱",
+      "residentialAddress": "居住地址",
+      "mailingAddress": "邮寄地址",
+      "mailingSame": "邮寄地址与居住地址相同",
+      "professionalBackground": "专业背景",
+      "backgroundHint": "可简要说明与中医外治法相关的经验、资格或专业背景。",
+      "optional": "（选填）",
+      "select": "请选择"
+    },
+    "gender": {
+      "female": "女",
+      "male": "男",
+      "non_binary": "非二元性别",
+      "prefer_not_to_say": "不愿透露"
+    },
+    "membershipType": {
+      "label": "会籍类型",
+      "viewDetails": "查看资格与权益",
+      "requirementsTitle": "申请资格",
+      "benefitsTitle": "会员权益",
+      "validityTitle": "会籍有效期",
+      "validity": "会员年费自缴费之日起生效，有效期为 12 个月。协会将在会籍到期前通过电子邮件提醒续费。",
+      "ordinary": {
+        "title": "普通会员",
+        "fee": "AUD $50 / 年",
+        "desc": "适合认同协会宗旨，并有兴趣了解或推广中医外治法的公众。",
+        "requirements": [
+          "年满 18 周岁",
+          "认可本协会宗旨",
+          "有兴趣了解或推广中医外治法，如艾灸、拔罐、推拿及刮痧等",
+          "不要求专业资质或行业经验"
+        ],
+        "benefits": [
+          "参加协会组织的活动、讲座及培训",
+          "参与会员大会等会员投票",
+          "优先报名协会培训与文化交流活动",
+          "享受会员优惠价格"
+        ]
+      },
+      "professional": {
+        "title": "专业会员",
+        "fee": "AUD $80 / 年",
+        "desc": "适合具有中医相关资质、经验或专业背景，并拥有相关从业或临床经验的人士。",
+        "requirements": [
+          "具有中医相关执业背景、经验或专业证书",
+          "具有至少一年相关从业或临床经验",
+          "有志为协会事务和发展作出贡献"
+        ],
+        "benefits": [
+          "拥有普通会员全部权益",
+          "可担任协会活动或讲座的主讲人、导师",
+          "有机会列入协会推荐的专业从业者名录",
+          "参与行业标准制定、学术交流及专业发展项目",
+          "优先获得协会研究及合作项目机会"
+        ]
+      }
+    },
+    "declaration": {
+      "title": "申请人声明",
+      "text": "本人确认以上所填信息真实准确，并愿意遵守本协会章程及相关规定。",
+      "accept": "我已阅读并同意以上申请人声明。"
+    },
+    "signature": {
+      "title": "申请人签名",
+      "hint": "请使用鼠标、触控笔或手指在下方区域签名。签名将在提交前自动裁剪和压缩。",
+      "placeholder": "请在此处签名",
+      "canvasLabel": "手写签名区域",
+      "clear": "清除并重签",
+      "savedAlt": "申请人签名",
+      "date": "签署日期"
+    },
+    "privacy": "您的资料及签名仅用于协会会员申请、审核与内部管理。请确认资料准确后再提交。",
+    "submit": "提交申请",
+    "submitting": "正在提交",
+    "errors": {
+      "signatureRequired": "请先完成手写签名。",
+      "notConfigured": "申请服务尚未完成配置，请稍后再试或联系协会。",
+      "rateLimited": "提交次数过多，请稍后再试。",
+      "submitFailed": "申请提交失败，请检查网络后重试。"
+    },
+    "success": {
+      "title": "申请已成功提交",
+      "desc": "请保存申请编号，并可打印或保存当前申请为 PDF。",
+      "print": "打印 / 保存 PDF",
+      "reference": "申请编号",
+      "submittedAt": "提交时间",
+      "notProvided": "未填写",
+      "footer": "本申请由 CMETA 在线会员申请系统生成。申请编号：{{reference}}"
     }
   },
   "knowledge": {

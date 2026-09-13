@@ -22,7 +22,21 @@ export function Footer() {
         <nav className={`flex flex-wrap gap-y-3 ${isEnglish ? "gap-x-3 text-sm xl:flex-nowrap" : "gap-x-6 text-sm"}`} aria-label="Footer navigation">
           {links.map(([id, label]) => <a key={id} href={`/#${id}`} className="whitespace-nowrap hover:text-gold">{label}</a>)}
         </nav>
-        <p className={`${isEnglish ? "text-[11px] xl:whitespace-nowrap" : "text-xs"}`}>{t("footer.copyright")}</p>
+        <div className="whitespace-nowrap text-sm">
+          <span>{t("footer.relatedLink")}: </span>
+          <a
+            href="https://www.ningyuantang.com.au/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white/80 transition-colors hover:text-gold"
+          >
+            {t("footer.ningYuanTang")} <span aria-hidden="true">↗</span>
+            <span className="sr-only"> ({t("footer.opensInNewWindow")})</span>
+          </a>
+        </div>
+      </div>
+      <div className="container mx-auto mt-8 border-t border-white/10 px-6 pt-5 md:px-8">
+        <p className={`${isEnglish ? "text-[11px]" : "text-xs"}`}>{t("footer.copyright")}</p>
       </div>
     </footer>
   );

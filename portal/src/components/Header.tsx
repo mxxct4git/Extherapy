@@ -85,6 +85,9 @@ export function Header() {
           <Button variant="ghost" size="sm" onClick={toggleLanguage} className="ml-2 border-l border-primary/15 pl-5 text-primary">
             {t("nav.switchLang")}
           </Button>
+          <Button size="sm" onClick={() => navigate("/membership/apply")} className="bg-primary px-4 text-white hover:bg-deep">
+            {t("nav.join")}
+          </Button>
         </nav>
 
         <div className="flex items-center gap-1 lg:hidden">
@@ -103,6 +106,9 @@ export function Header() {
                 {link.name}
               </button>
             ))}
+            <button type="button" onClick={() => { setIsOpen(false); navigate("/membership/apply"); }} className="mt-4 bg-primary px-4 py-3 text-left font-semibold text-white">
+              {t("nav.join")}
+            </button>
           </div>
         </nav>
       )}
