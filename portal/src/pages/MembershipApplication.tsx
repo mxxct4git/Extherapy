@@ -119,6 +119,9 @@ export function MembershipApplication() {
 
   if (result && submittedForm) {
     const locale = isEnglish ? "en-AU" : "zh-CN";
+    const paymentEmailHref = `mailto:member@cmeta.org.au?subject=${encodeURIComponent(
+      t("application.payment.emailSubject", { reference: result.referenceNumber }),
+    )}`;
     return (
       <section className="membership-application min-h-screen bg-[#f7f3ea] py-12 md:py-20">
         <div className="print-sheet mx-auto max-w-4xl bg-white px-6 py-10 shadow-[0_20px_70px_rgba(18,63,54,0.12)] md:px-14 md:py-14">
@@ -140,6 +143,33 @@ export function MembershipApplication() {
             <h2 className="mt-3 font-serif text-3xl text-primary md:text-4xl">{t("application.title")}</h2>
             <p className="mt-3 text-sm text-muted-foreground">{t("application.associationName")}</p>
           </div>
+
+          <section className="screen-only mt-10 border border-primary/20 bg-primary/[0.04] p-6 md:p-8">
+            <div className="flex flex-wrap items-start justify-between gap-4">
+              <div>
+                <p className="text-xs font-bold uppercase tracking-[0.18em] text-gold">{t("application.payment.eyebrow")}</p>
+                <h3 className="mt-2 font-serif text-2xl text-primary">{t("application.payment.title")}</h3>
+                <p className="mt-2 max-w-2xl text-sm leading-6 text-foreground/75">
+                  {t("application.payment.instructions", { reference: result.referenceNumber })}
+                </p>
+              </div>
+              <div className="bg-primary px-4 py-3 text-right text-white">
+                <p className="text-[11px] uppercase tracking-wide text-white/70">{t("application.payment.amount")}</p>
+                <p className="mt-1 font-semibold">{t(`application.membershipType.${submittedForm.membershipType}.fee`)}</p>
+              </div>
+            </div>
+            <dl className="mt-6 grid gap-5 border-t border-primary/15 pt-5 sm:grid-cols-[2fr_1fr_1fr]">
+              <SummaryItem label={t("application.payment.accountName")} value="Chinese Medicine External Therapies Association of Australia Inc." />
+              <SummaryItem label={t("application.payment.bsb")} value="083-170" strong />
+              <SummaryItem label={t("application.payment.accountNumber")} value="977631308" strong />
+            </dl>
+            <a href={paymentEmailHref} className="screen-only mt-6 inline-flex bg-primary px-5 py-3 text-sm font-semibold text-white transition hover:bg-deep">
+              {t("application.payment.emailReceipt")}
+            </a>
+            <p className="mt-4 text-xs text-muted-foreground">
+              {t("application.payment.emailLabel")}: member@cmeta.org.au
+            </p>
+          </section>
 
           <dl className="print-details mt-10 grid gap-x-10 gap-y-5 border-y border-border py-8 sm:grid-cols-2">
             <SummaryItem label={t("application.success.reference")} value={result.referenceNumber} strong />

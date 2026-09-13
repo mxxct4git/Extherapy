@@ -278,6 +278,18 @@
       "submittedAt": "提交时间",
       "notProvided": "未填写",
       "footer": "本申请由 CMETA 在线会员申请系统生成。申请编号：{{reference}}"
+    },
+    "payment": {
+      "eyebrow": "下一步",
+      "title": "支付会员年费",
+      "instructions": "请将会费转账至以下账户。付款后，请将转账记录截图发送至会员邮箱，并在邮件中注明申请编号 {{reference}}。",
+      "amount": "应付金额",
+      "accountName": "账户名称",
+      "bsb": "BSB",
+      "accountNumber": "账号",
+      "emailReceipt": "发送付款凭证",
+      "emailLabel": "会员邮箱",
+      "emailSubject": "会员付款凭证 - 申请编号 {{reference}}"
     }
   },
   "knowledge": {
