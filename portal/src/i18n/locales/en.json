@@ -68,7 +68,7 @@
     "contact": "Contact Us",
     "email": "Email: admin@cmeta.org.au",
     "location": "Shop 2, 188 Whitehorse Road, Balwyn",
-    "relatedLink": "Related link",
+    "relatedLink": "Ning Yuan Tang Chinese Medicine Clinic",
     "ningYuanTang": "Ning Yuan Tang",
     "opensInNewWindow": "opens in a new window",
     "copyright": "© 2026 Chinese Medicine External Therapies Association of Australia Inc."
@@ -188,6 +188,9 @@
       "nameEnglish": "Name in English",
       "gender": "Gender",
       "dateOfBirth": "Date of Birth",
+      "year": "Year",
+      "month": "Month",
+      "day": "Day",
       "ageHint": "Applicants must be at least 18 years old.",
       "contactNumber": "Contact Number",
       "email": "Email",
@@ -264,6 +267,7 @@
     "privacy": "Your personal details and signature will only be used to process, review, and administer your membership application. Check your details before submitting.",
     "submit": "Submit Application",
     "submitting": "Submitting",
+    "submittingHint": "Your application and signature are being securely uploaded. Please keep this page open.",
     "errors": {
       "signatureRequired": "Please add your handwritten signature before submitting.",
       "notConfigured": "The application service has not been configured yet. Please try again later or contact the Association.",

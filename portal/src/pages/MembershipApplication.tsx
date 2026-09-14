@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState, type ChangeEvent, type FormEvent, type ReactNode } from "react";
-import { ArrowLeft, CheckCircle2, Loader2, Printer } from "lucide-react";
+import * as Select from "@radix-ui/react-select";
+import { ArrowLeft, Check, CheckCircle2, ChevronDown, ChevronUp, Loader2, Printer } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
 import { SignaturePad, type SignaturePadHandle } from "@/components/SignaturePad";
@@ -222,7 +223,7 @@ export function MembershipApplication() {
             <p className="mt-5 text-lg leading-8 text-muted-foreground">{t("application.intro")}</p>
           </div>
 
-          <form onSubmit={handleSubmit} className="space-y-8" noValidate={false}>
+          <form onSubmit={handleSubmit} className="space-y-8" noValidate={false} aria-busy={submitting}>
             <FormSection number="01" title={t("application.sections.personal")}>
               <div className="grid gap-5 sm:grid-cols-2">
                 <Field label={t("application.fields.nameChinese")} optional>
@@ -232,15 +233,26 @@ export function MembershipApplication() {
                   <input name="nameEnglish" value={form.nameEnglish} onChange={setField} autoComplete="name" required className={fieldClass} />
                 </Field>
                 <Field label={t("application.fields.gender")}>
-                  <select name="gender" value={form.gender} onChange={setField} required className={fieldClass}>
-                    <option value="">{t("application.fields.select")}</option>
-                    {(["female", "male", "non_binary", "prefer_not_to_say"] as Gender[]).map((gender) => (
-                      <option key={gender} value={gender}>{t(`application.gender.${gender}`)}</option>
-                    ))}
-                  </select>
+                  <div className="mt-2">
+                    <UiSelect
+                      name="gender"
+                      value={form.gender}
+                      placeholder={t("application.fields.select")}
+                      required
+                      options={(["female", "male", "non_binary", "prefer_not_to_say"] as Gender[]).map((gender) => ({
+                        value: gender,
+                        label: t(`application.gender.${gender}`),
+                      }))}
+                      onValueChange={(gender) => setForm((current) => ({ ...current, gender: gender as Gender }))}
+                    />
+                  </div>
                 </Field>
                 <Field label={t("application.fields.dateOfBirth")} hint={t("application.fields.ageHint")}>
-                  <input type="date" name="dateOfBirth" value={form.dateOfBirth} onChange={setField} max={maximumBirthDate} required className={fieldClass} />
+                  <BirthDateSelect
+                    value={form.dateOfBirth}
+                    maximumDate={maximumBirthDate}
+                    onChange={(dateOfBirth) => setForm((current) => ({ ...current, dateOfBirth }))}
+                  />
                 </Field>
                 <Field label={t("application.fields.contactNumber")}>
                   <input type="tel" name="contactNumber" value={form.contactNumber} onChange={setField} autoComplete="tel" required minLength={6} maxLength={30} className={fieldClass} />
@@ -254,7 +266,7 @@ export function MembershipApplication() {
             <FormSection number="02" title={t("application.sections.address")}>
               <div className="space-y-5">
                 <Field label={t("application.fields.residentialAddress")}>
-                  <textarea name="residentialAddress" value={form.residentialAddress} onChange={setField} autoComplete="street-address" required maxLength={500} className={textAreaClass} />
+                  <input name="residentialAddress" value={form.residentialAddress} onChange={setField} autoComplete="street-address" required maxLength={500} className={fieldClass} />
                 </Field>
                 <label className="flex items-start gap-3 text-sm text-foreground/80">
                   <input type="checkbox" checked={mailingSame} onChange={(event) => setMailingSame(event.target.checked)} className="mt-0.5 h-4 w-4 accent-primary" />
@@ -262,7 +274,7 @@ export function MembershipApplication() {
                 </label>
                 {!mailingSame && (
                   <Field label={t("application.fields.mailingAddress")}>
-                    <textarea name="mailingAddress" value={form.mailingAddress} onChange={setField} autoComplete="postal-code" required maxLength={500} className={textAreaClass} />
+                    <input name="mailingAddress" value={form.mailingAddress} onChange={setField} autoComplete="street-address" required maxLength={500} className={fieldClass} />
                   </Field>
                 )}
               </div>
@@ -329,7 +341,92 @@ export function MembershipApplication() {
           </form>
         </div>
       </div>
+      {submitting && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-[#072720]/70 px-5 backdrop-blur-sm"
+          role="status"
+          aria-live="assertive"
+          aria-label={t("application.submitting")}
+        >
+          <div className="w-full max-w-sm bg-white px-8 py-10 text-center shadow-[0_24px_80px_rgba(0,0,0,0.3)]">
+            <Loader2 className="mx-auto h-10 w-10 animate-spin text-gold" aria-hidden="true" />
+            <p className="mt-5 font-serif text-2xl text-primary">{t("application.submitting")}</p>
+            <p className="mt-3 text-sm leading-6 text-muted-foreground">{t("application.submittingHint")}</p>
+          </div>
+        </div>
+      )}
     </section>
+  );
+}
+
+function BirthDateSelect({ value, maximumDate, onChange }: { value: string; maximumDate: string; onChange: (value: string) => void }) {
+  const { t } = useTranslation();
+  const [initialYear = "", initialMonth = "", initialDay = ""] = value.split("-");
+  const [year, setYear] = useState(initialYear);
+  const [month, setMonth] = useState(initialMonth);
+  const [day, setDay] = useState(initialDay);
+  const [maximumYear, maximumMonth, maximumDay] = maximumDate.split("-").map(Number);
+  const selectedYear = Number(year);
+  const selectedMonth = Number(month);
+  const latestMonth = selectedYear === maximumYear ? maximumMonth : 12;
+  const daysInMonth = year && month ? new Date(selectedYear, selectedMonth, 0).getDate() : 31;
+  const latestDay = selectedYear === maximumYear && selectedMonth === maximumMonth ? Math.min(daysInMonth, maximumDay) : daysInMonth;
+  const years = Array.from({ length: maximumYear - 1899 }, (_, index) => maximumYear - index);
+
+  const commit = (nextYear: string, nextMonth: string, nextDay: string) => {
+    onChange(nextYear && nextMonth && nextDay ? `${nextYear}-${nextMonth.padStart(2, "0")}-${nextDay.padStart(2, "0")}` : "");
+  };
+
+  return (
+    <div className="mt-2 grid grid-cols-[1fr_1fr_1.35fr] gap-2 sm:gap-3">
+      <UiSelect name="birthDay" value={day} placeholder={t("application.fields.day")} required options={Array.from({ length: latestDay }, (_, index) => ({ value: String(index + 1), label: String(index + 1) }))} onValueChange={(nextDay) => {
+        setDay(nextDay); commit(year, month, nextDay);
+      }} />
+      <UiSelect name="birthMonth" value={month} placeholder={t("application.fields.month")} required options={Array.from({ length: latestMonth }, (_, index) => ({ value: String(index + 1), label: String(index + 1) }))} onValueChange={(nextMonth) => {
+        const nextDaysInMonth = year && nextMonth ? new Date(selectedYear, Number(nextMonth), 0).getDate() : 31;
+        const nextLatestDay = selectedYear === maximumYear && Number(nextMonth) === maximumMonth ? Math.min(nextDaysInMonth, maximumDay) : nextDaysInMonth;
+        const nextDay = Number(day) > nextLatestDay ? "" : day;
+        setMonth(nextMonth); setDay(nextDay); commit(year, nextMonth, nextDay);
+      }} />
+      <UiSelect name="birthYear" value={year} placeholder={t("application.fields.year")} required options={years.map((option) => ({ value: String(option), label: String(option) }))} onValueChange={(nextYear) => {
+        const nextLatestMonth = Number(nextYear) === maximumYear ? maximumMonth : 12;
+        const nextMonth = Number(month) > nextLatestMonth ? "" : month;
+        const nextDay = nextMonth ? day : "";
+        setYear(nextYear); setMonth(nextMonth); setDay(nextDay); commit(nextYear, nextMonth, nextDay);
+      }} />
+    </div>
+  );
+}
+
+function UiSelect({ name, value, placeholder, options, required, onValueChange }: {
+  name: string;
+  value: string;
+  placeholder: string;
+  options: Array<{ value: string; label: string }>;
+  required?: boolean;
+  onValueChange: (value: string) => void;
+}) {
+  return (
+    <Select.Root name={name} value={value} onValueChange={onValueChange} required={required}>
+      <Select.Trigger className="flex h-12 w-full items-center justify-between border border-border bg-white px-4 text-left font-normal text-foreground outline-none transition data-[placeholder]:text-muted-foreground focus:border-primary focus:ring-2 focus:ring-primary/10" aria-label={placeholder}>
+        <Select.Value placeholder={placeholder} />
+        <Select.Icon><ChevronDown className="h-4 w-4 text-primary" aria-hidden="true" /></Select.Icon>
+      </Select.Trigger>
+      <Select.Portal>
+        <Select.Content position="popper" sideOffset={5} collisionPadding={12} className="z-[60] max-h-[min(320px,var(--radix-select-content-available-height))] min-w-[var(--radix-select-trigger-width)] overflow-hidden border border-border bg-white shadow-[0_16px_50px_rgba(7,39,32,0.18)]">
+          <Select.ScrollUpButton className="flex h-8 items-center justify-center bg-white text-primary"><ChevronUp className="h-4 w-4" /></Select.ScrollUpButton>
+          <Select.Viewport className="p-1">
+            {options.map((option) => (
+              <Select.Item key={option.value} value={option.value} className="relative flex h-10 cursor-default select-none items-center py-2 pl-9 pr-4 font-normal text-foreground outline-none data-[highlighted]:bg-primary data-[highlighted]:text-white">
+                <Select.ItemIndicator className="absolute left-3"><Check className="h-4 w-4" /></Select.ItemIndicator>
+                <Select.ItemText>{option.label}</Select.ItemText>
+              </Select.Item>
+            ))}
+          </Select.Viewport>
+          <Select.ScrollDownButton className="flex h-8 items-center justify-center bg-white text-primary"><ChevronDown className="h-4 w-4" /></Select.ScrollDownButton>
+        </Select.Content>
+      </Select.Portal>
+    </Select.Root>
   );
 }
 

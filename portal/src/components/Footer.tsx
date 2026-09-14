@@ -23,14 +23,13 @@ export function Footer() {
           {links.map(([id, label]) => <a key={id} href={`/#${id}`} className="whitespace-nowrap hover:text-gold">{label}</a>)}
         </nav>
         <div className="whitespace-nowrap text-sm">
-          <span>{t("footer.relatedLink")}: </span>
           <a
             href="https://www.ningyuantang.com.au/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-white/80 transition-colors hover:text-gold"
           >
-            {t("footer.ningYuanTang")} <span aria-hidden="true">↗</span>
+            {t("footer.relatedLink")} <span aria-hidden="true">↗</span>
             <span className="sr-only"> ({t("footer.opensInNewWindow")})</span>
           </a>
         </div>
